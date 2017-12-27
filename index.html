@@ -6,32 +6,32 @@ newsletter_background_image: https://source.unsplash.com/c8ET5XvBwnU/1880x1240?a
 ---
 <header style="background-image: url({% include relative-src.html src=page.header_background_image %});">
 	<div class="container">
-		<h1 class="editable">Welcome to Yakhair.com</h1>
+		<h1>Welcome to Yakhair.com</h1>
 	</div>
 	<div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
 </header>
 
 <section id="learn-more">
 	<div class="container">
-		<h2 class="editable">Why Sheep need the vote</h2>
+		<h2>Why Sheep need the vote</h2>
 
 		<ul class="thirds">
 			<li>
-				<div class="image"><img class="editable" alt="population" src="{{ site.baseurl }}/images/people.svg" /></div>
-				<h3 class="editable">Population</h3>
-				<p class="editable">New Zealand has a human population of just 4.5M while there are 70M sheep. </p>
+				<div class="image"><img alt="population" src="{{ site.baseurl }}/images/people.svg" /></div>
+				<h3>Population</h3>
+				<p>New Zealand has a human population of just 4.5M while there are 70M sheep. </p>
 			</li>
 
 			<li>
-				<div class="image"><img class="editable" alt="trends" src="{{ site.baseurl }}/images/trend.svg" /></div>
-				<h3 class="editable">Economy</h3>
-				<p class="editable">Sheep are the backbone of the economy yet they receive no compensation.</p>
+				<div class="image"><img alt="trends" src="{{ site.baseurl }}/images/trend.svg" /></div>
+				<h3>Economy</h3>
+				<p>Sheep are the backbone of the economy yet they receive no compensation.</p>
 			</li>
 
 			<li>
-				<div class="image"><img class="editable" alt="conditions" src="{{ site.baseurl }}/images/heart.svg" /></div>
-				<h3 class="editable">Work Conditions</h3>
-				<p class="editable">Sheep are forced to eat grass every day of their life. How about some of variety?</p>
+				<div class="image"><img alt="conditions" src="{{ site.baseurl }}/images/heart.svg" /></div>
+				<h3>Work Conditions</h3>
+				<p>Sheep are forced to eat grass every day of their life. How about some of variety?</p>
 			</li>
 		</ul>
 	</div>
@@ -39,19 +39,19 @@ newsletter_background_image: https://source.unsplash.com/c8ET5XvBwnU/1880x1240?a
 
 <section>
 	<div class="container mission">
-		<h2 class="editable">Why Yakhair?</h2>
-		<p class="editable"><img src="/images/yak-head.jpg" alt="Yak head">Every time I give out my email address, people always have a chuckle over my domain name and then they ask about it. Unique domain names were difficult to come by even back in 2001. When trying to come up with a good name, I was reminded of a recent trip where I saw a wig store sign advertising yak hair wigs.</p>
+		<h2>Why Yakhair?</h2>
+		<p><img src="/images/yak-head.jpg" alt="Yak head">Every time I give out my email address, people always have a chuckle over my domain name and then they ask about it. Unique domain names were difficult to come by even back in 2001. When trying to come up with a good name, I was reminded of a recent trip where I saw a wig store sign advertising yak hair wigs.</p>
 	</div>
 </section>
 
 <section>
 	<div class="container">
 		<blockquote>
-			<p class="quote editable">What can you do with it? It's like a lot of yaks jumping about.</p>
+			<p class="quote">What can you do with it? It's like a lot of yaks jumping about.</p>
 			<div class="attribute">
 				<p class="meta">
-					<span class="author editable"><strong>Sir Thomas Beecham</strong></span>
-					<span class="image"><img class="editable" src="{{ site.baseurl }}/images/sir-thomas-beecham.png" alt="Sir Thomas Beecham"></span>
+					<span class="author"><strong>Sir Thomas Beecham</strong></span>
+					<span class="image"><img src="{{ site.baseurl }}/images/sir-thomas-beecham.png" alt="Sir Thomas Beecham"></span>
 				</p>
 			</div>
 		</blockquote>
@@ -60,8 +60,8 @@ newsletter_background_image: https://source.unsplash.com/c8ET5XvBwnU/1880x1240?a
 
 <section class="newsletter" style="background-image: url({% include relative-src.html src=page.newsletter_background_image %});">
 	<div class="container">
-		<h2 class="editable">Join us</h2>
-		<p class="editable">Sign up to hear the latest news and progress in our fight for the sheep vote.</p>
+		<h2>Join us</h2>
+		<p>Sign up to hear the latest news and progress in our fight for the sheep vote.</p>
 		<form action="{{ site.newsletter_action }}" method="post">
 			<input type="text" name="EMAIL" placeholder="Email">
 			<input type="submit" value="Sign up"/>
@@ -71,7 +71,7 @@ newsletter_background_image: https://source.unsplash.com/c8ET5XvBwnU/1880x1240?a
 
 <section>
 	<div class="container">
-		<h2 class="editable">Updates</h2>
+		<h2>Updates</h2>
 		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
 		{% for post in site.posts %}
 			{% assign author_id = post.author_staff_member | prepend: "/staff_members/" | append: "/" %}
