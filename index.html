@@ -2,7 +2,6 @@
 layout: default
 title: Welcome to yakhair.com
 header_background_image: /images/grazing_yaks.jpg
-newsletter_background_image: https://source.unsplash.com/c8ET5XvBwnU/1880x1240?a=.png
 ---
 <header style="background-image: url({% include relative-src.html src=page.header_background_image %});">
 	<div class="container">
@@ -55,17 +54,6 @@ newsletter_background_image: https://source.unsplash.com/c8ET5XvBwnU/1880x1240?a
 				</p>
 			</div>
 		</blockquote>
-	</div>
-</section>
-
-<section class="newsletter" style="background-image: url({% include relative-src.html src=page.newsletter_background_image %});">
-	<div class="container">
-		<h2>Join us</h2>
-		<p>Sign up to hear the latest news and progress in our fight for the sheep vote.</p>
-		<form action="{{ site.newsletter_action }}" method="post">
-			<input type="text" name="EMAIL" placeholder="Email">
-			<input type="submit" value="Sign up"/>
-		</form>
 	</div>
 </section>
 
