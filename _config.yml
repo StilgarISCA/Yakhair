@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+lang: en-US
 title: Yakhair.com
 email:
 description: >- # this means to ignore newlines until "baseurl:"
@@ -21,25 +22,31 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.yakhair.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+author:
+  name: Glenn Hoeppner
+  picture: https://s.gravatar.com/avatar/959080cbb338fac79169ebbe21cbe988?s=80
+twitter_username:
+github_username: StilgarISCA
+logo: # path of site logo, e.g. "/assets/images/logo.png"
 
 # Build settings
 markdown: kramdown
 #theme: minima
 remote_theme: "mmistakes/jekyll-theme-basically-basic"
 plugins:
-  - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+#  - jekyll-paginate
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+ exclude:
+   - Gemfile
+   - Gemfile.lock
+   - node_modules
+   - vendor
+   - Rakefile
