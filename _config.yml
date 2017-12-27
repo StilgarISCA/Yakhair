@@ -14,39 +14,80 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: Yakhair.com
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.yakhair.com" # the base hostname & protocol for your site, e.g. http://example.com
+title: yakhair.com
+url: #https://www.yakhair.com
+baseurl: #https://www.yakhair.com
+google_analytics_key:
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Homepage for Glenn Hoeppner
 author:
   name: Glenn Hoeppner
-  picture: https://s.gravatar.com/avatar/959080cbb338fac79169ebbe21cbe988?s=80
-twitter_username:
-github_username: StilgarISCA
-logo: # path of site logo, e.g. "/assets/images/logo.png"
+  email:
+  twitter: # twitter username without the @ symbol
+social:
+  name: #Cause Template
+  links:
+    #- https://github.com/CloudCannon/cause-jekyll-template
+
+# -----
+# Build
+
+collections:
+  staff_members:
+    _hide_content: true
+    _options:
+      image:
+        width: 250
+        height: 250
+
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      _options:
+        content:
+          width: 1880
+          height: 1880
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+newsletter_action: #"//your-mailchimp-action-url.com"
 
 # Build settings
 markdown: kramdown
-#theme: minima
-remote_theme: "mmistakes/jekyll-theme-basically-basic"
 plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-sitemap
-#  - jekyll-paginate
-
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
- exclude:
-   - Gemfile
-   - Gemfile.lock
-   - node_modules
-   - vendor
-   - Rakefile
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# -----------
+# CloudCannon
+
+_options:
+  header_background_image:
+    width: 1880
+    height: 1880
+  newsletter_background_image:
+    width: 1880
+    height: 1880
