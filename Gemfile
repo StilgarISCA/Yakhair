@@ -11,6 +11,9 @@ source "https://rubygems.org"
 #gem "jekyll", "~> 3.6.2"
 gem "github-pages", group: :jekyll_plugins
 
+# Support remote themes. Allows you to use other themes without cloning yourself
+gem "jekyll-remote-theme"
+
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
 
