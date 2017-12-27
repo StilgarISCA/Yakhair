@@ -49,6 +49,13 @@ nav {
 	z-index: 999;
 	line-height: 0;
 
+    .container a {
+        font-size: 1.75em;
+        color: #fff;
+        text-decoration: none;
+        align-items: center;
+    }
+
 	.button a {
 		padding: 13px;
 		font-size: .8em;
