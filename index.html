@@ -59,9 +59,11 @@ header_background_image: /images/grazing_yaks.jpg
 
 <section>
 	<div class="container">
-		<h2>Updates</h2>
-		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<h2>Random Musings</h2>
+        <p>From time-to-time I might have something of general interest to share. Those thoughts will appear here.</p>
+        {% assign postCounter = 0 %}
 		{% for post in site.posts %}
+            {% assign postCounter = postCounter | plus: 1 %}
 			{% assign author_id = post.author_staff_member | prepend: "/staff_members/" | append: "/" %}
 			{% assign author = site.staff_members | where: "url", author_id | first %}
 			<div class="post">
@@ -71,8 +73,12 @@ header_background_image: /images/grazing_yaks.jpg
 					<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
 				</div>
 				{{ post.content }}
-				<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
 			</div>
 		{% endfor %}
+        {% if postCounter == 0 %}
+            <div class="post">
+                <p>Sorry! Nothing to see here right now.</p>
+            </div>
+        {% endif %}
 	</div>
 </section>
