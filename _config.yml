@@ -16,7 +16,7 @@
 lang: en-US
 title: yakhair.com
 url: #https://www.yakhair.com
-baseurl: #https://www.yakhair.com
+baseurl: #https://www.yakhair.com #No trailing slash!
 google_analytics_key:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
