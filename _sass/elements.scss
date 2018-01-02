@@ -56,6 +56,10 @@ nav {
         height: 22px;
 	}
 
+    a:hover svg{
+                fill: #fff;
+            }
+
     div.header-home-link a {
         font-size: 1.75em;
         color: #fff;
@@ -65,25 +69,6 @@ nav {
             height: 1.1em;
         }
     }
-}
-
-header {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 100vh;
-	display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-	align-items: center;
-	color: #fff;
-	text-shadow: 1px 1px 1px #000;
-
-	.button a {
-		text-shadow: none;
-		font-size: 1.4em;
-	}
 }
 
 section {
