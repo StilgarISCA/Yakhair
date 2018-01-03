@@ -18,9 +18,11 @@
     </div>
 </nav>
 
+{% if page.header_background_image %}
 <header style="background-image: url({% include relative-src.html src=page.header_background_image %});">
 	<div class="container">
 		<h1>{{ page.title }}</h1>
 	</div>
 	<div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
 </header>
+{% endif %}
