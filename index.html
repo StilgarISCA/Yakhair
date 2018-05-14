@@ -65,7 +65,8 @@ header_background_image: /images/grazing-yaks.jpg
 					<h3>{{ post.title }}</h3>
 					<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
 				</div>
-				{{ post.content }}
+				{{ post.excerpt }}<br/>
+                <a class="button" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
 			</div>
 		{% endfor %}
         {% if postCounter == 0 %}
