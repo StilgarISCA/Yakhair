@@ -22,10 +22,6 @@ google_analytics_key:
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
 description: Homepage for Glenn Hoeppner
-author:
-  name: Glenn Hoeppner
-  email:
-  twitter: # twitter username without the @ symbol
 social:
   name: #Cause Template
   links:
