@@ -183,6 +183,16 @@ footer {
     }
 }
 
+.image-wrapper {
+    text-align: center;
+
+    .image-caption {
+        color: black;
+        margin-top: 1.1% / 3;
+        font-size: smaller;
+    }
+}
+
 .learn-more {
 	position: absolute;
 	left: 0;
