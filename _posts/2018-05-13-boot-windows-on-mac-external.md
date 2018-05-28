@@ -8,7 +8,8 @@ If you try booting the Windows 10 Setup on a Mac and installing to an external d
 
 I thought it was high-time for a write up a document on how to do this.
 
-What you need:
+### Requirements ###
+
 * A Windows 10 License
 * Some sort of external USB Boot Device
     * On my 2010 iMac I did it with a USB 2.0 HDD dock. It was painfully slow, but it worked.
@@ -58,15 +59,15 @@ On your Mac, launch the Boot Camp Assistant — search for it, or look under App
 
 ### Boot Into Windows ###
 
-Restart your Mac and hold down the option key. This brings up a device boot menu. I don’t have too hard of a time doing this on my 2017 iMac, but it was a real pain in the ass to get the timing right on my old 2010 and it often took several reboots. If you get it right, you’ll be presented with the potential boot devices. Pick your new Windows install.
+Restart your Mac and hold down the Option key. This brings up a device boot menu. I don’t have too hard of a time doing this on my 2017 iMac, but it was a real pain in the ass to get the timing right on my old 2010 and it often took several reboots. If you get it right, you’ll be presented with potential boot devices. Pick your new Windows install.
 
 {% include image.html img="images/boot-device-selection-screen-mac.png" title="Photo of the boot device picker on a Mac" %}
 
-The first time you start you have to walk through the remaining Windows setup steps. Keep in mind that Windows might want to restart as part of this process. Anytime that Windows reboots, you’re going to have to old down the Option key and select the Windows boot device.
+The first time you start you have to walk through the remaining Windows setup steps. Keep in mind that Windows might want to restart as part of this process. Anytime that Windows reboots, you’re going to have to hold down the Option key and select the Windows boot device.
 
 {% include image.html img="images/first-boot-windows-on-mac.png" title="Photo of Windows 10 bootk on an iMac" %}
 
-Once you’ve created your account and are finally in Windows, you’ll want to install the drivers. Copy the “WindowsSupport” folder off of your USB device on to the Windows machine. Run WindowsSupport > BootCamp > Setup.exe. This will install all the drivers. Be careful because my Windows stopped and rebooted at some point during this process. I think it was because the Boot Camp installer updated the USB drivers and my USB boot device was unmounted in the process. I had to run the Setup two times in order to get all the drivers properly installed.
+After you’ve created your account and are finally in Windows, you’ll want to install the drivers. Copy the “WindowsSupport” folder off of your USB device on to the Windows machine. Run WindowsSupport > BootCamp > Setup.exe. This will install all the drivers. Be careful because my Windows stopped and rebooted at some point during this process. I think it was because the Boot Camp installer updated the USB drivers and my USB boot device was unmounted in the process. I had to run the Setup two times in order to get all the drivers properly installed.
 
 Once it is installed and you’ve restarted, launch the Apple Boot Camp software from the Windows start menu and check for updates. There are probably newer video drivers than you’re using and you’ll want those.
 
