@@ -6,7 +6,7 @@ excerpt: Sources on the internet tell you it's not possible to boot Windows 10 o
 ---
 If you try booting the Windows 10 Setup on a Mac and installing to an external drive results in the error “Windows cannot be installed to this disk. Setup does not support configuration of or installation to disks connected through a USB or IEEE 1394 port.” There is lots of mis-information on the internet that says you cannot install Windows to an external drive and then boot that drive on a Mac. This is false. I’ve done it with Windows 10 on my 27” 2010 iMac and also on my 27” 2017 iMac.
 
-I thought it was high-time for a write up a document on how to do this.
+I thought it was time for a write up on how to achieve this.
 
 ### Requirements ###
 
